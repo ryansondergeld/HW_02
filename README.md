@@ -14,3 +14,14 @@ Mobile App Development <br>
 
 ## Demonstration
 <video src="https://github.com/user-attachments/assets/0d4e9847-baa0-4aee-bb22-9ac507565695"></video>
+
+## Required
+- [x] GUI matches teacher (including capital letters for hex values)
+- [x] Color class exists and used to store colors
+- [x] Seekbars change Red, Green, and Blue labels
+- [x] Seekbars change background color
+- [x] Seekbars change hexadecimal color
+- [x] Custom cell and custom adapter used for List
+- [x] Selecting a saved color changes the background, seekbars, and hexadecimal representation
+- [x] Text changes from black to white as required to be visible
+- [x] Saving a color reverts the selector to eitehr black or white      
