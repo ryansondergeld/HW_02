@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/vMainBackgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/vMainTopToolBar"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="#FF5722"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vMainTopToolBarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homework 01 RGB"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainTopToolBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vMainRedView"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vMainHexView" />
+
+    <SeekBar
+        android:id="@+id/vMainRedSeekBar"
+        android:layout_width="286dp"
+        android:layout_height="25dp"
+        android:indeterminateDrawable="@color/design_default_color_error"
+        android:max="255"
+        app:layout_constraintBottom_toTopOf="@+id/vMainGreenView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vMainRedView"
+        app:layout_constraintTop_toTopOf="@+id/vMainRedView" />
+
+    <TextView
+        android:id="@+id/vMainRedValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/vMainGreenView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vMainRedSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/vMainRedView" />
+
+    <TextView
+        android:id="@+id/vMainRedLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R:"
+        app:layout_constraintBottom_toTopOf="@+id/vMainGreenView"
+        app:layout_constraintEnd_toStartOf="@+id/vMainRedSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/vMainRedView"
+        app:layout_constraintTop_toTopOf="@+id/vMainRedView" />
+
+    <View
+        android:id="@+id/vMainGreenView"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vMainRedView" />
+
+    <SeekBar
+        android:id="@+id/vMainGreenSeekBar"
+        android:layout_width="286dp"
+        android:layout_height="25dp"
+        android:max="255"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainGreenView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vMainGreenView"
+        app:layout_constraintTop_toTopOf="@+id/vMainGreenView" />
+
+    <TextView
+        android:id="@+id/vMainGreenLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G:"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainGreenView"
+        app:layout_constraintEnd_toStartOf="@+id/vMainGreenSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/vMainGreenView"
+        app:layout_constraintTop_toTopOf="@+id/vMainGreenView" />
+
+    <TextView
+        android:id="@+id/vMainGreenValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainGreenView"
+        app:layout_constraintEnd_toEndOf="@+id/vMainGreenView"
+        app:layout_constraintStart_toEndOf="@+id/vMainGreenSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/vMainGreenView"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <View
+        android:id="@+id/vMainBlueView"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vMainGreenView" />
+
+    <SeekBar
+        android:id="@+id/vMainBlueSeekBar"
+        android:layout_width="286dp"
+        android:layout_height="25dp"
+        android:max="255"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainBlueView"
+        app:layout_constraintEnd_toEndOf="@+id/vMainBlueView"
+        app:layout_constraintStart_toStartOf="@+id/vMainBlueView"
+        app:layout_constraintTop_toBottomOf="@+id/vMainGreenView" />
+
+    <TextView
+        android:id="@+id/vMainBlueLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B:"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainBlueView"
+        app:layout_constraintEnd_toStartOf="@+id/vMainBlueSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/vMainBlueView"
+        app:layout_constraintTop_toBottomOf="@+id/vMainGreenView" />
+
+    <TextView
+        android:id="@+id/vMainBlueValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainBlueView"
+        app:layout_constraintEnd_toEndOf="@+id/vMainBlueView"
+        app:layout_constraintStart_toEndOf="@+id/vMainBlueSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/vMainGreenView" />
+
+    <Button
+        android:id="@+id/vMainSaveColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:onClick="addButtonClicked"
+        android:text="Save Color"
+        android:textColor="@color/black"
+        app:iconTint="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vMainBlueView" />
+
+    <View
+        android:id="@+id/vMainHexView"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vMainTopToolBar" />
+
+    <TextView
+        android:id="@+id/vMainHexValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="4dp"
+        android:text="FFFFFF"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainHexLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/vMainHexLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/vMainHexLabelTextView" />
+
+    <TextView
+        android:id="@+id/vMainHexLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Hex Value: "
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@+id/vMainHexView"
+        app:layout_constraintStart_toStartOf="@+id/vMainHexView" />
+
+    <View
+        android:id="@+id/vMainColorView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vMainSaveColorButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/vMainColorListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/vMainColorView"
+        app:layout_constraintStart_toStartOf="@+id/vMainColorView"
+        app:layout_constraintTop_toTopOf="@+id/vMainColorView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

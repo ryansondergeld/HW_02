@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <view
+        android:id="@+id/vColorListCellView"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="0dp"
+        android:layout_height="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vColorListCellRedLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="R:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vColorListCellRedValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="255"
+        app:layout_constraintBottom_toBottomOf="@+id/vColorListCellRedLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/vColorListCellRedLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/vColorListCellRedLabelTextView" />
+
+    <TextView
+        android:id="@+id/vColorListCellGreenLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="G:"
+        app:layout_constraintBottom_toBottomOf="@+id/vColorListCellRedValueTextView"
+        app:layout_constraintStart_toEndOf="@+id/vColorListCellRedValueTextView"
+        app:layout_constraintTop_toTopOf="@+id/vColorListCellRedValueTextView" />
+
+    <TextView
+        android:id="@+id/vColorListCellGreenValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="255"
+        app:layout_constraintBottom_toBottomOf="@+id/vColorListCellGreenLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/vColorListCellGreenLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/vColorListCellGreenLabelTextView" />
+
+    <TextView
+        android:id="@+id/vColorListCellBlueLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="B:"
+        app:layout_constraintBottom_toBottomOf="@+id/vColorListCellGreenValueTextView"
+        app:layout_constraintStart_toEndOf="@+id/vColorListCellGreenValueTextView"
+        app:layout_constraintTop_toTopOf="@+id/vColorListCellGreenValueTextView" />
+
+    <TextView
+        android:id="@+id/vColorListCellBlueValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="255"
+        app:layout_constraintBottom_toBottomOf="@+id/vColorListCellBlueLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/vColorListCellBlueLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/vColorListCellBlueLabelTextView" />
+
+    <TextView
+        android:id="@+id/vColorListCellHexLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="Hex:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vColorListCellRedLabelTextView" />
+
+    <TextView
+        android:id="@+id/vColorListCellHexValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/vColorListCellHexLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/vColorListCellHexLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/vColorListCellHexLabelTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
